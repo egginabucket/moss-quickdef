@@ -13,7 +13,6 @@ INTERVAL = KEY_SIGNATURE.tonic.number - DEFINITION_NUCLEUS.pitch_class.number
 while INTERVAL > 6:
     INTERVAL -= 12
 
-print(str(INTERVAL))
 def main():
     with open(CORE_DEFS_PATH) as f:
         defs = yaml.load(f.read(), SafeLoader)
